@@ -106,11 +106,10 @@
   const mayk = new Person();
   console.log(mayk);
 
-  /* Manipulação de Dados */
-
-
-  /*   ###   Manipulando String e Numeros   ###   */
-
+  /*   
+    ###   Manipulação de Dados   ###   
+  */
+ 
   // Transformando String em Numero e Numero em Strings
   let string = "123"
   console.log(Number(string));
@@ -136,9 +135,9 @@
 
   // Separar um texto que contem espaçõs e um array de palavras, depois transformar o array em um texto e onde era espaçõs colocar _
   let phrase = "Eu quero viver o Amor!"
-  let myArray = phrase.split(" ")
+  let myArray = phrase.split(" ") //Separou onde tinha espaços
   console.log(myArray)
-  let phraseWithUnderscore = myArray.join("_")
+  let phraseWithUnderscore = myArray.join("_") //Juntou colocando underscore 
   console.log(phraseWithUnderscore)
   // E tambem podemos tranformar em Maiusculo
   console.log(phraseWithUnderscore.toUpperCase())
