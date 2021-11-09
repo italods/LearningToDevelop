@@ -134,6 +134,22 @@
   console.log(dev.toLowerCase()) //Minusculo
   console.log(dev.toUpperCase()) //Maiusculo
 
+  // Separar um texto que contem espaçõs e um array de palavras, depois transformar o array em um texto e onde era espaçõs colocar _
+  let phrase = "Eu quero viver o Amor!"
+  let myArray = phrase.split(" ")
+  console.log(myArray)
+  let phraseWithUnderscore = myArray.join("_")
+  console.log(phraseWithUnderscore)
+  // E tambem podemos tranformar em Maiusculo
+  console.log(phraseWithUnderscore.toUpperCase())
+
+  // Verificar se o texto contém uma palavra especifica
+  let phrase1 = "Eu quero viver"
+  console.log(phrase1.includes("Amor"))
+
+  // Transformando uma cadeia de caracteres em elementos de um array
+  let phrase2 = "Italo"
+  console.log(Array.from(phrase2));
 
 
 </script>
