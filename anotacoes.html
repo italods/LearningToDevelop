@@ -106,10 +106,26 @@
   const mayk = new Person();
   console.log(mayk);
 
-  /* Prototype */
+  /* Manipulação de Dados */
 
-  // Type conversion (typecasting) vs Type coersion
-  // Alteração de um tipo de dado para outro tipo
+
+  /*   ###   Manipulando String e Numeros   ###   */
+
+  // Transformando String em Numero e Numero em Strings
+  /* let string = "123"
+  console.log(Number(string));
+  let number = 321
+  console.log(String(number)); */
+
+  // Contar quantos caracteres tem uma palavra e quantos digitos tem um numero
+  let word = "abcdefghijklmnopqrstuvwxyz"
+  console.log(word.length)
+
+  // Necessario fazer a conversação para string pois numero não recebe length
+  let numbers = 1234
+  console.log(String(numbers).length)
   
-
+  // Transformando um numero quebrado com 2 casas decimais - .toFixed(2) e trocar ponto por virgula .replace(".", ",")
+  let pi = 3.1416
+  console.log(pi.toFixed(2).replace(".", ","))
 </script>
