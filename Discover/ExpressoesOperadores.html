@@ -28,22 +28,80 @@
     /* Operadores Aritimeticos  */
     
     console.log( 3.2 * 5.5 ); // Multiplicação
-    console.log( 264 / 2 ); // Divisão
+    console.log( 264 / 2 );   // Divisão
     console.log( 512 + 512 ); // Soma
-    console.log( 8 - 4 ); // Subtração
+    console.log( 8 - 4 );     // Subtração
 
-    console.log(); // Resto da divisão
-    console.log(); // Incremento
-    console.log(); // Decremento
-    console.log(); // Exponencial
+    // Resto da divisão
+    let remainder
+    remainder = 11 % 9
+    console.log(remainder); 
+    
+    let count = 2
+    console.log(++count);  // Incremento
+    console.log(--count);  // Decremento
+     
+    console.log( 3 ** 3 ); // Exponencial - 3 elevado a 3
   
+    // Grouping operator ()
+    
+    let a1 = 2 + 3 * 5
+    let a2 = ( 2 + 3 ) * 5
+    console.log( a1 );
+    console.log( a2 );
+
+    /* Operadores de comparação  */
+
+    // Irá comparar valores e retornar um Boolean como resposta à comparação
+
+    let one = 1
+    let two = 2
+
+    //  ==   Igual a  
+    console.log( two == 1 )    // False
+    console.log( one == "1" )  // True
+    //  !=   Diferente de
+    console.log( one != two )  // True
+    console.log( one != 1 )    // False
+    console.log( one != "1" )  // False
+
+    //  ===  Estritamente igual a   (Compara os valores e os tipos)
+    console.log( one === "1" ) // False - Valores iguais mas tipos diferentes
+    console.log( one === 1 )   // True  - Valores e tipos não são diferentes
+    //  !==  Estritamente diferente de
+    console.log( two !== "2")  // True  - Valores iguais mas tipos diferentes
+    console.log( two !== 2 )   // False - Valores e tipos não são diferentes
   
+    //  >  Maior que
+    console.log(one > two) // False
+    //  <  Menor que
+    console.log(one < two) // True
+    //  >=  Maior igual a
+    console.log(one >= 1)  // True - Igual a 1
+    console.log(two >= 1)  // True - Maior que 1
+    //  <=  Menor igual a
+    console.log(one <= two) // True - Menor que 2
+    console.log(one < 1)    // True - Igual a 1
+    console.log(one <= 0)   // False - Pois ele é maior
   
-  
-  
-  
-  
-  
+    /* Operadores de atribuição (Assignment)  */
+
+    let x
+
+    x = 1 // Atribuiu 1 a x
+
+    // Addition assignment or 
+    x += 2   // x = x + 2 
+    // Subtraction assignment or
+    x -= 1   // x = x - 1 
+    // Multiplication assignment 
+    x *= 2   // x = x * 2
+    // Division assignment
+    x /= 2   // x = x / 2
+    // Remaider assignment
+    x %= 2   // x = x % 2
+    // Exponetiation assignment
+    x**=2    // x = x ** 2
   </script>
 </body>
 </html>
